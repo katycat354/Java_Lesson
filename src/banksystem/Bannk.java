@@ -6,10 +6,10 @@ import java.util.List;
 public class Bannk {
 
 
-    String title;
-    String address;
-    Director director;
-    List<Employee> employeeList = new ArrayList<>();
+   private String title;
+   private String address;
+   private Director director;
+   private List<Employee> employeeList = new ArrayList<>();
 
 
     public Bannk(String title, String address, Director director){
@@ -38,17 +38,35 @@ public class Bannk {
 
     }
 
-    public static void main(String[] args) {
+    public String getTitle() {
+        return title;
+    }
 
-        Director director = new Director("Alex", "A", 1_000_000);
-        Bannk alphaBank = new Bannk("Alpha Bank", "Spb. nevskiy 55", director);
-        alphaBank.printInformation();
-        alphaBank.whoIsDirector();
-        alphaBank.addEmployee("Anja", "L", 60_0000);
-        alphaBank.addEmployee("Kolja", "L", 60_0000);
-        alphaBank.printEmployee();
-        Bannk vtbBank = new Bannk("Vtb Bank", "Spb. Nevskiy 33", director);
-        vtbBank.printInformation();
+    public void setTitle(String title) {
+        this.title = title;
+    }
 
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public Director getDirector() {
+        return director;
+    }
+
+    public void setDirector(Director director) {
+        this.director = director;
+    }
+
+    public List<Employee> getEmployeeList() {
+        return employeeList;
+    }
+
+    public void setEmployeeList(List<Employee> employeeList) {
+        this.employeeList = employeeList;
     }
 }

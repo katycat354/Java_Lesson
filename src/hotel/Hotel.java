@@ -18,5 +18,10 @@ public class Hotel {
         employeeList.add(employee);
     }
 
+    public void printEmplooyees(){
+
+
+    }
+
 }
 

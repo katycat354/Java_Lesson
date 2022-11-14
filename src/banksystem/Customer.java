@@ -2,5 +2,5 @@ package banksystem;
 
 public class Customer {
 
-    String name;
+   private String name;
 }

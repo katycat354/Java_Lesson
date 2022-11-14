@@ -2,9 +2,9 @@ package banksystem;
 
 public class Director {
 
-    String firstName;
-    String lastName;
-    int salary;
+   private String firstName;
+   private String lastName;
+   private int salary;
 
     public Director (String firstName, String lastName, int salary){
         this.firstName = firstName;
@@ -16,7 +16,33 @@ public class Director {
         System.out.println(firstName + " - " + lastName + " - " + salary + " - ");
     }
 
-    /*
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public void setSalary(int salary) {
+        if (salary > 0) {
+            this.salary = salary;
+
+        }
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public int getSalary() {
+        return salary;
+    }
+/*
     Сделать конструктор
     и
     сделаь метод, который бы печатал информацию о директоре на экран. Аналогично как в банке
